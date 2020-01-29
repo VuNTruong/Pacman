@@ -58,6 +58,7 @@
      <Compile Include="Assets\AppleScript.cs" />
      <Compile Include="Assets\CreateApples.cs" />
      <Compile Include="Assets\CreateKey.cs" />
+     <Compile Include="Assets\GetProperties.cs" />
      <Compile Include="Assets\GhostScript.cs" />
      <Compile Include="Assets\PacManScript.cs" />
  <Reference Include="Unity.Timeline.Editor">

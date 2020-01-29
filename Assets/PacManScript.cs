@@ -12,7 +12,7 @@ public class PacManScript : MonoBehaviour
 
     // variable to hold number of apples
     // will decrement each time collide with apple
-    int appleCount = 28;
+    public int appleCount = 28;
 
     Animator anim;
 
@@ -46,24 +46,28 @@ public class PacManScript : MonoBehaviour
             {
                 dy = speed;
                 rb.SetRotation(90);
+                Debug.Log(rb.transform.rotation);
             }
             // Move down
             if (Input.GetKey(KeyCode.DownArrow))
             {
                 dy = -speed;
                 rb.SetRotation(270);
+                Debug.Log(rb.transform.rotation);
             }
             // Move left
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 dx = -speed;
                 rb.SetRotation(180);
+                Debug.Log(rb.transform.rotation);
             }
             // Move right
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 dx = speed;
                 rb.SetRotation(0);
+                Debug.Log(rb.transform.rotation);
             }
         }
         else
@@ -74,6 +78,8 @@ public class PacManScript : MonoBehaviour
 
         // Move by that amount
         rb.position += new Vector2(dx, dy);
+
+        
 
     }
 

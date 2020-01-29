@@ -43,7 +43,7 @@ public class GhostScript : MonoBehaviour
         else
         {
             // Go back to the house
-            
+
             // House position
             float houseX = 0f;
             float houseY = 0f;
@@ -53,7 +53,7 @@ public class GhostScript : MonoBehaviour
             // Get difference between current and target location
             Vector2 delta = housePositionVector - rb.position;
 
-            
+
             delta.Normalize();
 
             // Multiply be speed
@@ -61,9 +61,8 @@ public class GhostScript : MonoBehaviour
 
             // Use this to change position
             rb.position += delta;
-           
-        }
 
+        }
     }
 
     void OnCollisionEnter2D (Collision2D col)
